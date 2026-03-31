@@ -1,4 +1,3 @@
-
 import { Suspense, useState } from 'react'
 import './App.css'
 import Hero from './Header/Hero/Hero'
@@ -20,7 +19,7 @@ function App() {
   
 
   const premiumtools=fetch('premiumtools.json').then(res=>res.json())
-  console.log(premiumtools)
+  
 
   const [toggle,setToggle]=useState("products");
 

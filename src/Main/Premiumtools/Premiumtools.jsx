@@ -12,7 +12,6 @@ const Premiumtools = ({toggle,setToggle,premiumtools,selectedplans,setSelectedpl
     }
 
     const premiumtools_data=use(premiumtools)
-    console.log(premiumtools_data);
     return (
         <div className='bg-white'>
             {/* heading */}
