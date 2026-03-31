@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price":9.99 ,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Basic templates",
+      "Limited exports",
+      "Community support"
+    ],
+    "icon": "/products/operation.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "2000+ templates",
+      "Monthly updates",
+      "Commercial license"
+      
+    ],
+    "icon": "/products/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 69.99,
+    "period": "monthly",
+    "tag": "Best seller",
+    "tagType": "best seller",
+    "features": [
+    "10M+ assets",
+    "Commercial use",
+    "No attribution"
+    ],
+    "icon": "/products/Group 7.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "50+ automations",
+      "API access",
+      "Custom workflows"
+    ],
+    "icon": "/products/portfolio.png"
+  },
+  {
+    "id": 5,
+    "name": "Enterprise Plan",
+    "description": "Custom solutions for large organizations.",
+    "price": 199.99,
+    "period": "yearly",
+    "tag": "Best seller",
+    "tagType": "best seller",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "/products/writing_2327400 1.png"
+  },
+  {
+    "id": 6,
+    "name": "Freelancer Boost",
+    "description": "Designed for freelancers to grow and manage clients efficiently.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Client management tools",
+      "Invoice generator",
+      "Portfolio builder",
+      "Priority email support"
+    ],
+    "icon": "/products/social-media.png"
+  }
+]
