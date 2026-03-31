@@ -14,7 +14,7 @@ setSelectedplans([...selectedplans,tools_data])
 }
 
     return (
-    <div className="max-w-lg bg-white border border-gray-100 rounded-2xl p-10 relative shadow-2xl">
+    <div className="max-w-lg h-full flex flex-col bg-white border border-gray-100 rounded-2xl p-10 relative shadow-2xl">
   {/* Badge */}
   <div className={`absolute top-8 right-8 ${tools_data.tag==="New"&&"bg-green-300 text-green-700"||tools_data.tag==="Best seller"&& "bg-orange-300  text-orange-700"||tools_data.tag==="Popular"&&"bg-purple-300 text-purple-700"} text-sm font-bold px-4 py-1.5 rounded-full`}>
     {tools_data.tag}
@@ -26,8 +26,9 @@ setSelectedplans([...selectedplans,tools_data])
   </div>
 
   {/* Header */}
-  <h2 className="text-4xl font-extrabold text-gray-900 mb-4">AI Writing Pro</h2>
-  <p className="text-gray-500 text-lg leading-snug mb-8">
+  <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
+  {tools_data.name}</h2>
+  <p className="text-gray-500 text-lg leading-snug mb-8 min-h-[80px]">
     {tools_data.description}
   </p>
 
@@ -50,7 +51,7 @@ setSelectedplans([...selectedplans,tools_data])
   </div>
 
   {/* Action */}
-  <button onClick={()=>handleactive()}  disabled={active} className={`w-full py-5 ${active===true?"bg-green-400":"bg-[#7C3AED]"}  text-white text-xl font-bold rounded-2xl transition-all`}>
+  <button onClick={()=>handleactive()}  disabled={active} className={`mt-auto w-full py-5 ${active===true?"bg-green-400":"bg-[#7C3AED]"}  text-white text-xl font-bold rounded-2xl transition-all`}>
     {active===true?"Purchased":"Buy Now"}
   </button>
 </div>

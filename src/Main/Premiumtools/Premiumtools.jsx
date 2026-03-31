@@ -32,7 +32,7 @@ const Premiumtools = ({toggle,setToggle,premiumtools,selectedplans,setSelectedpl
 {/* motherdiv */}
            {toggle==="products"?(
 
-<div className={`grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl m-auto  place-items-center rounded-4xl p-2 my-5`}>
+<div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl m-auto items-stretch rounded-4xl p-2 my-5">
 {premiumtools_data.map((tools_data,index)=><Tools_card key={index} tools_data={tools_data} selectedplans={selectedplans} setSelectedplans={setSelectedplans} ></Tools_card>)}
 </div>):(<Cart selectedplans={selectedplans} setSelectedplans={setSelectedplans}></Cart>)}
             </div>

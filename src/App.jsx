@@ -1,26 +1,36 @@
+
 import { Suspense, useState } from 'react'
 import './App.css'
-import Nav from './Header/Navbar/Nav'
 import Hero from './Header/Hero/Hero'
+import Nav from './Header/navbar/Nav'
 import Count from './Main/Counter/Count'
 import Premiumtools from './Main/Premiumtools/Premiumtools'
 import Pricing from './Main/Pricing_sec/Pricing'
-import Started from './Main/Strated/Started'
+import Footer from './Footer/Footer'
+import Started from './Main/Started/Started'
+import Readytransform from './Footer/Readytransform'
+
+
+
 
 
 function App() {
-  
+ 
   const count=fetch('counter.json').then(res=>res.json())
   
+
   const premiumtools=fetch('premiumtools.json').then(res=>res.json())
   console.log(premiumtools)
 
   const [toggle,setToggle]=useState("products");
 
+    const [selectedplans,setSelectedplans]=useState([])
+    const [active,setActive]=useState(false);
+
   return (
-    <>
-    {/* header Start */}
-<Nav ></Nav>
+ <>
+{/* header Start */}
+<Nav selectedplans={selectedplans}></Nav>
 
 
 
@@ -59,9 +69,8 @@ function App() {
     </div>
   }
 ><Premiumtools toggle={toggle} active={active} setActive={setActive} setToggle={setToggle} premiumtools={premiumtools} selectedplans={selectedplans} setSelectedplans={setSelectedplans}></Premiumtools>
-
+ 
 </Suspense>
-
 {/* getstarted */}
 
 {toggle === "products" &&
@@ -72,9 +81,18 @@ function App() {
 {toggle === "products" &&
 <Pricing></Pricing>
 }
+ {/* transform */}
+ {toggle==="products" &&
+<Readytransform></Readytransform>
+}
 
 
-    </>
+{/* footer */}
+{toggle==="products" &&
+<Footer></Footer>
+}
+ </>
+
   )
 }
 
