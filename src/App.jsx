@@ -1,11 +1,21 @@
+import { Suspense, useState } from 'react'
 import './App.css'
+import Nav from './Header/navbar/Nav'
+import Hero from './Header/Hero/Hero'
 
 function App() {
   
 
   return (
     <>
-      <h1 className='text-red-500'>Hlw</h1>
+    
+
+      <Nav></Nav>
+
+
+      <Hero></Hero>
+
+
     </>
   )
 }
