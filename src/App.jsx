@@ -4,6 +4,9 @@ import Nav from './Header/Navbar/Nav'
 import Hero from './Header/Hero/Hero'
 import Count from './Main/Counter/Count'
 import Premiumtools from './Main/Premiumtools/Premiumtools'
+import Pricing from './Main/Pricing_sec/Pricing'
+import Started from './Main/Strated/Started'
+
 
 function App() {
   
@@ -16,20 +19,25 @@ function App() {
 
   return (
     <>
-    
+    {/* header Start */}
+<Nav ></Nav>
 
-      <Nav></Nav>
 
 
-      <Hero></Hero>
+{toggle === "products" &&
+<Hero></Hero>
+}
 
-      <Suspense fallback={<span className='loading loading-spinner text-primary'></span>}>
-      
-      <Count count={count}></Count>
-      
-      </Suspense>
 
-      {toggle === "products" &&
+{/* header end */}
+
+
+{/* main start */}
+
+
+{/* counter */}
+
+{toggle === "products" &&
 <Suspense 
   fallback={
     <div className="flex h-64 w-full items-center justify-center">
@@ -53,6 +61,19 @@ function App() {
 ><Premiumtools toggle={toggle} active={active} setActive={setActive} setToggle={setToggle} premiumtools={premiumtools} selectedplans={selectedplans} setSelectedplans={setSelectedplans}></Premiumtools>
 
 </Suspense>
+
+{/* getstarted */}
+
+{toggle === "products" &&
+<Started></Started>
+}
+
+{/* pricing */}
+{toggle === "products" &&
+<Pricing></Pricing>
+}
+
+
     </>
   )
 }
