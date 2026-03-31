@@ -27,7 +27,7 @@ setSelectedplans([...selectedplans,tools_data])
 
   {/* Header */}
   <h2 className="text-4xl font-extrabold text-gray-900 mb-4">
-  {tools_data.name}</h2>
+  {tools_data.name} </h2>
   <p className="text-gray-500 text-lg leading-snug mb-8 min-h-[80px]">
     {tools_data.description}
   </p>

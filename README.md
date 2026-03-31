@@ -1,16 +1,26 @@
-# React + Vite
+### Digital Tools Buying Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the project
 
-Currently, two official plugins are available:
+This project is a modern and easy to use website where users can browse different digital tools and add them to their cart without any hassle. The main focus was to design a clean and responsive interface that feels like a real online shopping platform.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
 
-## React Compiler
+- React.js
+- Tailwind CSS & DaisyUI
+- JavaScript(ES6+)
+- React-Toastify
+- JSON
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Key Features
 
-## Expanding the ESLint configuration
+- #Cart Management:
+  Users can easily add products to the cart, remove items whenever they want, and clear the entire cart with a single click during checkout.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- #Smooth Navigation:
+  Switching between the product section and cart is smooth and fast, without any page reload, ensuring a better user experience.
+
+- #Interactive Feedback:
+  Every action like adding or removing items, instantly shows a notification, making the website feel more dynamic and user friendly. 
+
+

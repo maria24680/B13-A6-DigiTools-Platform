@@ -29,7 +29,7 @@ function App() {
 
   return (
  <>
-{/* header Start */}
+{/* header */}
 <Nav selectedplans={selectedplans}></Nav>
 
 
@@ -39,10 +39,10 @@ function App() {
 }
 
 
-{/* header end */}
+{/* header */}
 
 
-{/* main start */}
+{/* main */}
 
 
 {/* counter */}
